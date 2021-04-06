@@ -1,8 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-
-
     android:layout_height="match_parent"
     android:orientation="vertical">
     <LinearLayout
@@ -19,8 +18,9 @@
             android:layout_marginLeft="30dp"
             android:layout_weight="1"
             android:gravity="clip_horizontal|center|clip_vertical|center_horizontal"
-            android:text="Facebook"
-            android:textSize="24sp" />
+            android:text="@string/cmpName"
+            android:textSize="24sp"
+            android:layout_marginStart="30dp" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -28,7 +28,9 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/download" />
+            app:srcCompat="@drawable/download"
+            android:layout_marginStart="80dp"
+            tools:ignore="ContentDescription" />
 
 
     </LinearLayout>
@@ -46,7 +48,7 @@
 
         android:id="@+id/personDetails"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginBottom="50dp"
         android:layout_weight="1"
         android:gravity="clip_horizontal|center|clip_vertical|center_horizontal"
